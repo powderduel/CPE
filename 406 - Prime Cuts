@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int isprime(int a){
+for(int i=2;i*i<=a;i++)
+if(a%i==0)return 0;
+return 1;
+}
+int main(){
+vector<int>prime;
+for(int i=1;i<=1000;i++)
+if(isprime(i))prime.push_back(i);
+
+int a,b;
+while(cin>>a>>b){
+cout<<a<<" "<<b<<":";
+int i=0,sp;
+for(;prime[i]<=a;i++)if(i==169)break;
+
+if(i%2)b=2*b-1;
+else b*=2;
+if(b>i)b=i;
+
+sp=(i-b)/2;
+if(sp<0)sp=0;
+
+while(b--){
+cout<<" "<<prime[sp];
+sp++;
+}
+cout<<endl<<endl;
+}
+}
