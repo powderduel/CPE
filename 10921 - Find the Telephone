@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+char a;
+string alp ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+string alpn="22233344455566677778889999";
+while(cin.get(a)){
+if(isalpha(a))cout<<alpn[alp.find(a)];
+else cout<<a;
+
+}
+}
