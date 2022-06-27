@@ -1,11 +1,16 @@
 //note for CPE
 
-stoi(string)  == string to int
+stoi(string)  //string to int
 
-stoll(string) == string to long long
+stoll(string) //string to long long
 
 isprime(int n){
 for(int k=2;k*k=n;k++)
   if(n%i==0)return 0;
 return 1;
 }
+//prime numbers
+
+cin.getline(string) //get entire line of input
+
+cin.get(char)  //get all input using char
