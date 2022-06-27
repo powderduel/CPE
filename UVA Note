@@ -1,8 +1,14 @@
 //note for CPE
+include<bits/stdc++.h>
+using namespace std;
+int main(){
+}
+//base of all CPE
 
 stoi(string)  //string to int
-
 stoll(string) //string to long long
+cin.getline(string) //get entire line of input
+cin.get(char)  //get all input using char
 
 isprime(int n){
 for(int k=2;k*k=n;k++)
@@ -10,7 +16,3 @@ for(int k=2;k*k=n;k++)
 return 1;
 }
 //prime numbers
-
-cin.getline(string) //get entire line of input
-
-cin.get(char)  //get all input using char
